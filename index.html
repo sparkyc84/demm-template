@@ -1,0 +1,64 @@
+<!doctype html>
+<html class="no-js" lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DEMM Hack Prototype</title>
+    <meta name="description" content="This is a prototype digital manuscript edition made during the DEMM Hack week at Cambridge University Library.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="libs/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div id="welcome-splash" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-center pt-5 px-2">
+            <h5>Welcome to Your DEMM Hack Template</h5>
+          <div class="modal-footer">
+            <div class="col-auto">
+              <button type="button" class="btn btn-primary form-control" data-dismiss="modal">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="site-wrapper">
+      <div class="row">
+        <div class="col col-7 mx-auto">
+          <h1>Transcription</h1>
+          <p>
+          In in elit metus. Morbi dignissim maximus dapibus. In hac habitasse platea dictumst. Aenean ultricies ut metus sed vulputate. Vivamus viverra lorem eu orci malesuada, maximus efficitur ligula facilisis.<span class="note" data-author="Chris Sparks" data-note-type="commentary">This is one of a series of notes which are embedded in the HTML for the ‘Transcription’.</span> Ut a tincidunt ex. In ac mauris at quam scelerisque consectetur non quis turpis. Mauris hendrerit laoreet libero nec cursus. Cras ut tempor leo, quis auctor eros.
+          </p>
+          <p>
+          Cras sed vehicula ipsum. Ut blandit neque ornare tincidunt interdum. Donec ut metus dapibus, dictum nulla non, varius eros. Suspendisse potenti. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse molestie cursus nunc in aliquet. Vivamus at eros bibendum, scelerisque velit quis, sollicitudin quam. <span class="note" data-author="Chris Sparks" data-note-type="commentary">These notes are here to demontstrate the use of Handlebars.js in creating repetitive templated content.</span> Aenean nec finibus lorem, a pellentesque nibh. Donec vitae pulvinar quam, sit amet suscipit risus. Quisque euismod pulvinar tortor in consectetur. Duis non tortor maximus, ultricies massa non, fringilla metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam eu quam varius, pharetra leo ac, dignissim elit. Integer tristique, ipsum id faucibus egestas, felis enim aliquam dolor, sed mattis lacus dui sed nulla. Fusce rhoncus nibh sit amet metus fringilla gravida.
+          </p>
+          <p>
+          Nullam vel velit ac lacus auctor dapibus nec id libero. Aenean tempus vitae justo a laoreet. Donec vestibulum purus et metus commodo scelerisque. Nullam id quam semper, laoreet tellus nec, tempor arcu. Aliquam semper quam a semper tristique. In id semper nisi. Nam dapibus sapien libero, tincidunt vulputate risus dapibus id. Sed eu lacinia tortor, vitae mollis libero.
+          </p>
+          <p>
+          Phasellus nec nunc lorem. Pellentesque ultricies aliquam ligula et congue. Morbi porta scelerisque dolor, nec egestas lacus volutpat ac. Mauris dictum mi rhoncus porttitor vestibulum. Morbi in rhoncus orci. Aenean vulputate fringilla mi. Fusce in lacus sem. Etiam id diam euismod, commodo orci ac, posuere neque. Cras lacinia sed nulla vitae sollicitudin. Curabitur blandit porta faucibus. Sed convallis enim vitae velit dignissim tincidunt. Maecenas congue pharetra dolor nec pharetra. Nullam ornare, nisi in pellentesque euismod, magna arcu feugiat metus, vel ullamcorper leo lorem at nisl. <span class="note" data-author="Chris Sparks" data-note-type="commentary">The template is initiated in <code>application.js</code>.  You can also populate Handlebars templates using json objects or other javascript variables.</span> 
+          </p>
+          <p>
+          Phasellus nisl sem, consectetur ornare ultricies in, laoreet et tortor. Nam ac cursus leo. Cras consectetur dui non mattis blandit. Vivamus in elit ut est convallis cursus. Sed faucibus nulla eget cursus eleifend. Vestibulum sagittis, lectus fermentum consequat consequat, eros risus tincidunt nisi, a tempor ex velit ut dui. Quisque dolor lectus, finibus a finibus nec, porttitor sit amet nibh. Vestibulum non commodo sapien, quis scelerisque nisl.
+          </p>
+        </div>
+        <aside class="col col-4" id="sidebar">
+          <h1>Sidebar</h1>
+        </aside>
+      </div>
+    </div>
+    <script id="template-note" type="text/x-handlebars-template">
+      {{!-- {{This is a Handlebars template}} --}}
+      <div class="sidebar-note" data-note-id="{{id}}">
+        <h5>{{type}}</h5>
+        <p>{{{content}}}</p> 
+        <p class="text-right"><small>{{author}}</small></p>
+      </div>
+    </script>
+    <script src="libs/handlebars/handlebars-v4.0.11.js"></script>
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/popper/popper.min.js"></script>
+    <script src="libs/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/application.js" charset="utf-8" ></script>
+  </body>
+</html>
