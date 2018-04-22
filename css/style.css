@@ -1,11 +1,6 @@
 .sidebar-note{
   cursor: pointer;
-  padding: 1em;
-  border-radius: 1em;
 }
 .note-marker{
   cursor: pointer;
-  padding: 0 .2em;
-  margin: 0 .2em;
-  border-radius: 1em;
 }
